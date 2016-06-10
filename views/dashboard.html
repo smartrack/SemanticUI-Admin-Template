@@ -1,0 +1,67 @@
+<br/>
+	
+<div class="ui menu">  
+	  <div class="item header">
+		Server : {{::main.server.NAME}}
+	  </div>
+	  <div class="item">
+		Server is up since last <b>{{::main.today | amDifference:main.server.START_DATE : 'days'}} days</b>
+	  </div>
+	  <div class="item">
+		Load Averages: 0.08 0.06 0.01
+	  </div>
+	  
+	  <div class="right menu">
+		<a class="active teal item">
+			Updates
+			<div class="ui teal label">14</div>
+		</a>
+	 </div>
+</div>
+
+
+<div class="ui segment">
+	
+	<div class="ui two stackable cards">
+	  <div class="card">
+		<div class="content">
+			<h2 class="header">Ram Usage by accounts</h2>
+			<div class="ui divider"></div>
+			<table>
+				<tr>
+				<td><canvas id="ramUsageChart"></canvas></td>
+				<td class="chartData"></td>
+				</tr>
+			</table>
+		</div>			
+	  </div>	  
+	  <div class="card">
+		<div class="content">
+			<h2 class="header">Disc Usage</h2>
+			<div class="ui divider"></div>
+			<table>
+				<tr>
+				<td><canvas id="discUsageChart"></canvas></td>
+				<td class="chartData"></td>
+				</tr>
+			</table>
+		</div>
+	  </div>  
+	  <div class="card">
+		<div class="content">
+			<h2 class="header">Bandwidth Usage by accounts</h2>
+			<div class="ui divider"></div>
+			<canvas id="bandwidthUsageChart"></canvas>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="content">
+			<h2 class="header">New Accounts Report</h2>
+			<div class="ui divider"></div>
+			<canvas id="newAccountsChart"></canvas>
+		</div>		
+	  </div>
+	</div>
+	
+	
+</div>

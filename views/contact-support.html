@@ -1,0 +1,17 @@
+
+<br/>
+<form class="ui form stacked red padded segment">
+	<h1 class="ui header large dividing"> Support Center </h1>
+	
+		<div class="field">
+		  <label>Severity</label>
+		  <select class="ui fluid dropdown" ng-options="item as item.name for item in main.severityList" ng-model="issue.severity"></select>
+		</div>
+		<div class="field">
+		  <label>No of threads</label>
+		  <textarea name="noofthreads" ng-model="issue.desc"></textarea>
+		</div>
+	
+	<button class="ui button positive" type="submit"><i class="icon play"></i>Send</button>
+	<button class="ui button negative" type="reset"><i class="icon erase"></i>Reset</button>
+</form>

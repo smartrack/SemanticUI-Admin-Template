@@ -1,0 +1,50 @@
+<br/>
+	
+	<div class="ui menu">  
+	  <div class="item header">
+		System Health Report As of - {{::syshealthCtrl.timestamp | date: 'medium'}}
+	  </div>
+	<div class="right menu">
+		<div class="item field">
+			<div class="ui input">
+			  <button class="ui button" onClick="$('.ui.modal').modal('show')"><i class="icon file text outline"></i>Show Detail Report</button>
+			</div>
+		</div>
+	</div>	  
+	</div>
+</div>
+
+<div class="ui segment">
+
+	<h2 class="header">Process Wise Report</h2>
+	<canvas id="processWiseChart"></canvas>
+	
+	<div class="ui small modal">
+	  <i class="close icon"></i>
+	  <div class="header">
+		Detailed Process Report
+	  </div>
+	  <div class="content">
+		<table id="testcasedetailreport" class="ui celled structured table">
+		  <thead>
+			<tr>
+				<th>PID</th>
+				<th>Owner</th>
+				<th>CPU%</th>
+				<th>MEMORY%</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr ng-repeat="report in syshealthCtrl.processReportInDetail track by $index" ng-class="{'positive':testSuite.status == 'PASSED','negative':testSuite.status == 'FAILED'}">
+			  <td>{{::report.PID}}</td>
+			  <td>{{::report.Owner}}</td>
+			  <td>{{::report.cpu}}</td>
+			  <td>{{::report.memory}}</td>
+			</tr>
+			</tbody>
+		</table>
+	  </div>
+	</div>
+	
+	
+</div>

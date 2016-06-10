@@ -1,0 +1,20 @@
+[
+   {
+      "ramreport":{
+			"labels" : ["Account1","Account2","Account3","Account4","Account5"],
+			"data" : [12,44,23,21,19]
+		},
+	   "discreport":{
+			"labels" : ["Used","Available"],
+			"data" : [33,77]
+		},
+	   "bandwidthreport":{
+			"labels" : ["Account1","Account2","Account3","Account4","Account5"],
+			"data" : [12,44,23,21,19]
+		},
+	   "newaccountsreport":{
+			"labels" : ["May","June"],
+			"data" : [2,3]
+		}
+   }
+]

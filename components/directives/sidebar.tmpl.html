@@ -1,0 +1,24 @@
+
+	<a class="item header ui" href="#/">
+		  <i class="big icons">
+			<i class="tasks orange icon"></i>
+			<i class="yellow inverted corner map loading icon"></i>
+		  </i>
+		  {{::AppName}}
+	</a>
+	<a class="item" href="#/" ng-class="{'active': (selectedMenu == '/')}">
+	  <i class="icon settings"></i>Dashboard
+	</a>
+	<a class="item" href="#/syshealth" ng-class="{'active':(selectedMenu == '/syshealth')}">
+	  <i class="icon bar chart"></i>System Health  
+	</a>
+	<div class="ui simple dropdown item">
+		<i class="sitemap icon"></i>
+		Projects
+		<div class="menu">
+		  <a class="item" ng-repeat="project in ProjectList" href="{{::project.url}}">{{::project.name}} <i class="icon grey external"></i></a>
+		</div>
+	  </div>
+	<a class="item" href="#/support" ng-class="{'active':(selectedMenu == '/support')}">
+	  <i class="icon mail"></i>Support
+	</a>

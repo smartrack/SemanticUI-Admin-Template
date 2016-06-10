@@ -1,0 +1,34 @@
+
+.ui.dropdown.item:hover .menu .item{
+	background: rgba(255,255,255,.15);
+    color: #fff!important;
+}
+.ui.dropdown.item:hover .menu .item:hover{
+	background: rgba(0,0,0);
+    color: #999!important;
+}
+.ui.dropdown.item:hover .menu {
+    position: relative;
+    left: 2%!important;
+    top: 15px!important;
+	background:transparent;
+}
+#main-content{
+	padding:0 20px;
+	width:80%;
+	background-color: rgba(204, 204, 204, 0.25);
+}
+.ui.statistics > .statistic:before{
+    content: "";
+    position: absolute;
+    height: 65px;
+    border-left: 2px solid #ADB2B5;
+    margin-left: -20px;
+	top:20px;
+}
+.ui.statistics > .statistic:first-child:before {
+    border-left: 0;
+}
+.chartData .ui.table tr td{
+	border-top:0px;
+}
