@@ -10,7 +10,7 @@ If anyone wants to start their project with angularjs and good responsive framew
  <li><a href="https://angularjs.org">angularjs</a></li>
  <li><a href="https://semantic-ui.com">semantic-ui</a></li>
  <li><a href="https://jquery.com">jQuery</a></li>
- <li><a href="http://charts.js">charts</a></li>
+ <li><a href="https://www.chartjs.org">chartjs</a></li>
  <li><a href="https://momentjs.com">momentjs</a></li>
  <li><a href="http://hostmasterzone.com">Hostmasterzone</a></li>
  </ul>
